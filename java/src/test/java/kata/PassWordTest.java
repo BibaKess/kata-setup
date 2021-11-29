@@ -77,7 +77,7 @@ public class PassWordTest {
     
     @Test
     void pass_word_Valid(){
-		Password password = new Password("1");
+		Password password = new Password("1p");
 
 		Assertions.assertNotNull(password.getPassWordValue());
 		Assertions.assertTrue(password.hasAtLeastOneNumber());
