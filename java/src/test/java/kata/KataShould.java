@@ -9,7 +9,6 @@ public class KataShould {
 
     @Test
     public void startWithAFailingTest() {
-    	//test ayoub
         Assertions.fail("start by implementing a test");
     }
 }
