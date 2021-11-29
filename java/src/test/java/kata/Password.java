@@ -1,5 +1,7 @@
 package kata;
 
+import java.util.function.BooleanSupplier;
+
 public class Password {
 	
 	
@@ -17,6 +19,11 @@ public class Password {
 
 	public void setPassWordValue(String passWordValue) {
 		this.passWordValue = passWordValue;
+	}
+
+	public BooleanSupplier hasAtLeastOneNumber() {
+		
+		return false;
 	} 
 	
 	
