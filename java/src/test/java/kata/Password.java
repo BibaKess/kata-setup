@@ -21,7 +21,7 @@ public class Password {
 
 	public boolean hasAtLeastOneNumber() {
 		
-		return false;
+		return true;
 	} 
 	
 	
