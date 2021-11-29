@@ -36,7 +36,6 @@ public class Password {
 	
 	public boolean isValidPassword() {
 		return hasAtLeastOneNumber() && hasAtLeastOneCaracter() && hasMoreThanSixCaractere();
-
 	}
 
 }
