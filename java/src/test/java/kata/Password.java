@@ -27,7 +27,6 @@ public class Password {
 	}
 
 	public boolean hasMoreThanSixCaractere() {
-		// TODO Auto-generated method stub
 		return passWordValue.length()>6;
 	} 
 	
