@@ -1,5 +1,7 @@
 package kata;
 
+import java.util.function.BooleanSupplier;
+
 public class Password {
 	
 	
@@ -25,6 +27,11 @@ public class Password {
 
 	public boolean hasAtLeastOneCaracter() {
 		return passWordValue.matches(".*[a-zA-Z]+.*");
+	}
+
+	public boolean hasMoreThanSixCaractere() {
+		// TODO Auto-generated method stub
+		return passWordValue.length()>6;
 	} 
 	
 	
