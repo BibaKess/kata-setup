@@ -89,7 +89,7 @@ public class PassWordTest {
     void pass_word_notValid(){
 		Password password = new Password("");
 
-		Assertions.assertTrue(password.isValidPassword());
+		Assertions.assertFalse(password.isValidPassword());
 	}
     
     @Test
