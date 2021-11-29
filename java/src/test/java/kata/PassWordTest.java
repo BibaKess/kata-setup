@@ -53,7 +53,7 @@ public class PassWordTest {
         Assertions.assertTrue("Aa".matches("[a-zA-Z]+"));
         Assertions.assertTrue("aZ".matches("[a-zA-Z]+"));
         Assertions.assertTrue("1Z".matches(".[a-zA-Z]+"));
-        Assertions.assertTrue("rrrr1Z".matches(".[a-zA-Z]+"));
+        Assertions.assertTrue("rrrr1Z".matches(".*[a-zA-Z]+"));
 //        Assertions.assertTrue("a".matches("/^([a-zA-Z]+)$/"));
 //        Assertions.assertTrue("az".matches("/^([a-zA-Z]+)$/"));
     }
