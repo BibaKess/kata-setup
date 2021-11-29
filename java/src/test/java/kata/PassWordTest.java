@@ -55,7 +55,7 @@ public class PassWordTest {
 		Password password = new Password("pass1234");
 		
 		Assertions.assertNotNull(password.getPassWordValue());
-		Assertions.assertFalse(password.hasMoreThanSixCaractere());
+		Assertions.assertTrue(password.hasMoreThanSixCaractere());
 	}
 
     @Test
