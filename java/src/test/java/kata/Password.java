@@ -18,7 +18,7 @@ public class Password {
 	}
 
 	public void setPassWordValue(String passWordValue) {
-		passWordValue = passWordValue;
+		this.passWordValue = passWordValue;
 	}
 
 	public boolean hasAtLeastOneNumber() {
@@ -33,8 +33,5 @@ public class Password {
 		// TODO Auto-generated method stub
 		return passWordValue.length()>6;
 	} 
-	
-	
-	
 
 }
