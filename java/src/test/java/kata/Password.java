@@ -20,7 +20,7 @@ public class Password {
 	}
 
 	public boolean hasAtLeastOneNumber() {
-		
+		//this.passWordValue.matches(regex)
 		return true;
 	} 
 	
