@@ -21,7 +21,7 @@ public class Password {
 		this.passWordValue = passWordValue;
 	}
 
-	public Boolean hasAtLeastOneNumber() {
+	public boolean hasAtLeastOneNumber() {
 		
 		return false;
 	} 
