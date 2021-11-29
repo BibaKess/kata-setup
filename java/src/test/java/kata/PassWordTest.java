@@ -7,7 +7,7 @@ public class PassWordTest {
 	
 	@Test
 	public void pass_word_valid(){
-		Password passWord = new Password("");
+		Password passWord = new Password("1");
 
 		Assertions.assertThat(passWord.getPassWordValue()).isNotEmpty();
 	}
