@@ -114,6 +114,6 @@ import org.junit.jupiter.api.Test;
      @Test
      void testDuPO() throws Exception {
          Assertions.assertTrue(new Password("bonjour1").isValidPassword());
-         Assertions.assertTrue(new Password("hello1").isValidPassword());
+         Assertions.assertFalse(new Password("hello1").isValidPassword());
      }
  }
