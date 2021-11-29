@@ -17,7 +17,7 @@ public class PassWordTest {
 	}
 	
 	@Test
-	public void pass_word_isNotValid() {
+	public void pass_word_hasOneNumber_notValid() {
 		Password password = new Password("azerty");
 		
 		Assertions.assertNotNull(password.getPassWordValue());
