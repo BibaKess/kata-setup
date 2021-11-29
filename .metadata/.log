@@ -106,3 +106,6 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench.texteditor 4 0 2021-11-29 13:02:41.151
+!MESSAGE The 'com.googlecode.gwt.test.plugin.editor.EditorHLnkDetector' extension from plug-in 'com.googlecode.gwt-test-utils-plugin' to the 'org.eclipse.ui.workbench.texteditor.hyperlinkDetectors' extension point will be ignored because it contains invalid attributes.
