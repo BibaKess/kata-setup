@@ -5,6 +5,13 @@ public class Password {
 	
 	private String passWordValue ;
 
+	
+	
+	public Password(String passWordValue) {
+		super();
+		this.passWordValue = passWordValue;
+	}
+
 	public String getPassWordValue() {
 		return passWordValue;
 	}
