@@ -113,6 +113,6 @@ import org.junit.jupiter.api.Test;
 
      @Test
      void testDuPO() throws Exception {
-         
+         Assertions.assertTrue(new Password("bonjour1").isValidPassword());
      }
  }
