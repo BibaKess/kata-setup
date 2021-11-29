@@ -2,7 +2,6 @@ package kata;
 
 public class Password {
 	
-	
 	private String passWordValue ;
 
 	
@@ -33,7 +32,7 @@ public class Password {
 	} 
 	
 	public boolean isValidPassword() {
-		return !passWordValue.isEmpty() && hasAtLeastOneNumber() && hasAtLeastOneCaracter() && hasMoreThanSixCaractere();
+		return !passWordValue.isEmpty() && hasMoreThanSixCaractere() && hasAtLeastOneNumber() && hasAtLeastOneCaracter();
 	}
 
 }
