@@ -34,7 +34,7 @@ public class PassWordTest {
 		Assertions.assertFalse(password.hasAtLeastOneCaracter());
 	}
 	
-	@Disabled
+	@Test
 	 void pass_word_hasOneCaracter_Valid() {
 		Password password = new Password("az");
 		
