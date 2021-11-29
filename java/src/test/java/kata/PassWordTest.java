@@ -47,6 +47,7 @@ public class PassWordTest {
     void name() throws Exception {
         Assertions.assertTrue("a".matches("a"));
         Assertions.assertTrue("a".matches("a+"));
+        Assertions.assertTrue("az".matches("a+"));
 //        Assertions.assertTrue("a".matches("/^([a-zA-Z]+)$/"));
 //        Assertions.assertTrue("az".matches("/^([a-zA-Z]+)$/"));
     }
