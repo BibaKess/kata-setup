@@ -33,5 +33,9 @@ public class Password {
 		// TODO Auto-generated method stub
 		return passWordValue.length()>6;
 	} 
+	
+	public boolean isValidPassword() {
+
+	}
 
 }
