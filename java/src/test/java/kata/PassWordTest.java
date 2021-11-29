@@ -90,6 +90,7 @@ import org.junit.jupiter.api.Test;
 		Assertions.assertTrue(password.isValidPassword());
 	}
     
+    @Test
     void pass_word_notValid_lessThanSixCractere(){
 		Password password = new Password("12pa");
 
