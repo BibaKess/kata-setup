@@ -42,6 +42,8 @@ public class PassWordTest {
 	}
 
 
-
-
+    @Test
+    void name() throws Exception {
+        "az".matches("/^([a-zA-Z]+)$/")
+    }
 }
