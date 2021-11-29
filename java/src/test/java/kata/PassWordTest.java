@@ -49,6 +49,14 @@ public class PassWordTest {
 		Assertions.assertNotNull(password.getPassWordValue());
 		Assertions.assertFalse(password.hasMoreThanSixCaractere());
 	}
+	
+	@Test
+	 void pass_word_hasMoreThanSixCaractere_valid() {
+		Password password = new Password("pass123");
+		
+		Assertions.assertNotNull(password.getPassWordValue());
+		Assertions.assertFalse(password.hasMoreThanSixCaractere());
+	}
 
     @Test
     void name() throws Exception {
