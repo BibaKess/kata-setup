@@ -75,7 +75,7 @@ import org.junit.jupiter.api.Test;
     
     @Test
     void pass_word_Valid(){
-		Password password = new Password("123$pass");
+		Password password = new Password("bonjour1");
 
 		Assertions.assertNotNull(password.getPassWordValue());
 		Assertions.assertTrue(password.hasAtLeastOneNumber());
