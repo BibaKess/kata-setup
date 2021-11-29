@@ -22,5 +22,12 @@ public class PassWordTest {
 		
 		Assertions.assertFalse(password.hasAtLeastOneNumber());
 	}
+	
+	@Test
+	public void pass_word_hasOneCaracter() {
+		Password password = new Password("123456");
+		
+		Assertions.assertTrue(password.hasAtLeastOneCaracter());
+	}
 
 }
