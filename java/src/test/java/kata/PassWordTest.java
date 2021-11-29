@@ -13,6 +13,12 @@ public class PassWordTest {
 		
 		Assertions.assertNotNull(passWord.getPassWordValue());
 		Assertions.assertTrue(passWord.hasAtLeastOneNumber());
+		
+	}
+	
+	@Test
+	public void pass_word_isNotValid() {
+		Password password = new Password("azerty");
 	}
 
 }
