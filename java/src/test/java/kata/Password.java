@@ -24,7 +24,7 @@ public class Password {
 	}
 
 	public boolean hasAtLeastOneCaracter() {
-		return this.passWordValue.matches("/^([a-zA-Z]+)$/");
+		return passWordValue.matches("/^([a-zA-Z]+)$/");
 	} 
 	
 	
