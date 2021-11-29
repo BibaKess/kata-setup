@@ -8,7 +8,7 @@ public class Password {
 	
 	public Password(String passWordValue) {
 		super();
-		passWordValue = passWordValue;
+		this.passWordValue = passWordValue;
 	}
 
 	public String getPassWordValue() {
