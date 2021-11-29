@@ -74,4 +74,13 @@ public class PassWordTest {
 //        Assertions.assertTrue("a".matches("/^([a-zA-Z]+)$/"));
 //        Assertions.assertTrue("az".matches("/^([a-zA-Z]+)$/"));
     }
+    
+    void pass_word_Valid(){
+		Password password = new Password("1");
+
+		
+		Assertions.assertNotNull(password.getPassWordValue());
+		Assertions.assertTrue(password.hasAtLeastOneNumber());
+		
+	}
 }
