@@ -75,6 +75,7 @@ public class PassWordTest {
 //        Assertions.assertTrue("az".matches("/^([a-zA-Z]+)$/"));
     }
     
+    @Test
     void pass_word_Valid(){
 		Password password = new Password("1");
 
