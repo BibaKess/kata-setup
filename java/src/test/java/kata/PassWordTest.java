@@ -35,7 +35,7 @@ public class PassWordTest {
 	
 	@Test
 	public void pass_word_hasOneCaracter_Valid() {
-		Password password = new Password("123456");
+		Password password = new Password("123456az");
 		
 		Assertions.assertNotNull(password.getPassWordValue());
 		Assertions.assertTrue(password.hasAtLeastOneCaracter());
