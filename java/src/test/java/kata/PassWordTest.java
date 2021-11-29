@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class PassWordTest {
 	
 	@Test
-	 void pass_word_valid(){
+	 void pass_word_hasOneNumber_Valid(){
 		Password password = new Password("1");
 
 		
