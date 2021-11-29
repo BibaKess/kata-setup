@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class PassWordTest {
 	
 	@Test
-	public void pass_word_valid(){
+	 void pass_word_valid(){
 		Password password = new Password("1");
 
 		
@@ -17,7 +17,7 @@ public class PassWordTest {
 	}
 	
 	@Test
-	public void pass_word_hasOneNumber_notValid() {
+	void pass_word_hasOneNumber_notValid() {
 		Password password = new Password("azerty");
 		
 		Assertions.assertNotNull(password.getPassWordValue());
@@ -26,7 +26,7 @@ public class PassWordTest {
 	}
 	
 	@Test
-	public void pass_word_hasOneCaracter_notValid() {
+	 void pass_word_hasOneCaracter_notValid() {
 		Password password = new Password("123456");
 		
 		Assertions.assertNotNull(password.getPassWordValue());
@@ -34,7 +34,7 @@ public class PassWordTest {
 	}
 	
 	@Test
-	public void pass_word_hasOneCaracter_Valid() {
+	 void pass_word_hasOneCaracter_Valid() {
 		Password password = new Password("az");
 		
 		Assertions.assertNotNull(password.getPassWordValue());
