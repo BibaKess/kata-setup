@@ -86,8 +86,15 @@ public class PassWordTest {
 	}
     
     @Test
-    void pass_word_Valid_(){
+    void pass_word_notValid(){
 		Password password = new Password("");
+
+		Assertions.assertTrue(password.isValidPassword());
+	}
+    
+    @Test
+    void pass_word_Valid_(){
+		Password password = new Password("123$Pass");
 
 		Assertions.assertTrue(password.isValidPassword());
 	}
