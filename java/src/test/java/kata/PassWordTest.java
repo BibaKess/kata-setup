@@ -9,7 +9,7 @@ public class PassWordTest {
 	public void pass_word_valid(){
 		Password passWord = new Password("");
 
-		Assertions.assertThat(passWord.getPassWordValue()).isNotNull();
+		Assertions.assertThat(passWord.getPassWordValue()).isNotEmpty();
 	}
 
 }
