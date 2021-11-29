@@ -8,7 +8,7 @@ public class Password {
 	
 	public Password(String passWordValue) {
 		super();
-		this.passWordValue = passWordValue;
+		passWordValue = passWordValue;
 	}
 
 	public String getPassWordValue() {
@@ -16,11 +16,11 @@ public class Password {
 	}
 
 	public void setPassWordValue(String passWordValue) {
-		this.passWordValue = passWordValue;
+		passWordValue = passWordValue;
 	}
 
 	public boolean hasAtLeastOneNumber() {
-		return this.passWordValue.matches(".*\\d+.*");
+		return passWordValue.matches(".*\\d+.*");
 	}
 
 	public boolean hasAtLeastOneCaracter() {
