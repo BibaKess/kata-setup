@@ -1,5 +1,4 @@
 package kata;
-package ;
 
 public class Password {
 	
