@@ -27,7 +27,7 @@ public class Password {
 
 	public boolean hasAtLeastOneCaracter() {
 		// TODO Auto-generated method stub
-		return true;
+		return this.passWordValue.matches("/^([a-zA-Z]+)$/");
 	} 
 	
 	
