@@ -1608,3 +1608,6 @@ Binding(CTRL+J,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.moreunit 1 0 2021-11-29 14:29:12.131
+!MESSAGE RenameClassParticipant.checkConditions
