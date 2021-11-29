@@ -14,10 +14,6 @@ public class Password {
 		return passWordValue;
 	}
 
-	public void setPassWordValue(String passWordValue) {
-		this.passWordValue = passWordValue;
-	}
-
 	public boolean hasAtLeastOneNumber() {
 		return passWordValue.matches(".*\\d+.*");
 	}
