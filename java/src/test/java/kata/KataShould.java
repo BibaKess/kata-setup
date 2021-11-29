@@ -9,6 +9,6 @@ public class KataShould {
 
     @Test
     public void startWithAFailingTest() {
-        Assertions.fail("start by implementing a test");
+        Assertions.fail("start by implementing a test");//test ryi
     }
 }
