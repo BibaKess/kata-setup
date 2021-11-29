@@ -19,6 +19,8 @@ public class PassWordTest {
 	@Test
 	public void pass_word_isNotValid() {
 		Password password = new Password("azerty");
+		
+		Assertions.assertFalse(password.hasAtLeastOneNumber());
 	}
 
 }
