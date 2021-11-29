@@ -31,7 +31,7 @@ public class Password {
 	} 
 	
 	public boolean isValidPassword() {
-		return !passWordValue.isEmpty() && hasMoreThanSixCaractere() && hasAtLeastOneNumber() && hasAtLeastOneCaracter();
+		return hasMoreThanSixCaractere() && hasAtLeastOneNumber() && hasAtLeastOneCaracter();
 	}
 
 }
