@@ -30,7 +30,7 @@ public class PassWordTest {
 		Password password = new Password("123456");
 		
 		Assertions.assertNotNull(password.getPassWordValue());
-		Assertions.assertTrue(password.hasAtLeastOneCaracter());
+		Assertions.assertFalse(password.hasAtLeastOneCaracter());
 	}
 
 }
