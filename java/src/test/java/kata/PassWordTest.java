@@ -84,4 +84,12 @@ public class PassWordTest {
 		Assertions.assertTrue(password.hasAtLeastOneCaracter());
 		Assertions.assertTrue(password.hasMoreThanSixCaractere());
 	}
+    
+    @Test
+    void pass_word_Valid_(){
+		Password password = new Password("123$pass");
+
+		Assertions.assertNotNull(password.getPassWordValue());
+		Assertions.assertTrue(password.isValidPassword());
+	}
 }
