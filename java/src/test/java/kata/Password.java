@@ -14,10 +14,6 @@ public class Password {
 		return passWordValue;
 	}
 
-	public void setPassWordValue(String passWordValue) {
-		this.passWordValue = passWordValue;
-	}
-
 	public boolean hasAtLeastOneNumber() {
 		return passWordValue.matches(".*\\d+.*");
 	}
@@ -27,12 +23,11 @@ public class Password {
 	}
 
 	public boolean hasMoreThanSixCaractere() {
-		// TODO Auto-generated method stub
 		return passWordValue.length()>6;
 	} 
 	
 	public boolean isValidPassword() {
-		return !passWordValue.isEmpty() && hasMoreThanSixCaractere() && hasAtLeastOneNumber() && hasAtLeastOneCaracter();
+		return hasMoreThanSixCaractere() && hasAtLeastOneNumber() && hasAtLeastOneCaracter();
 	}
 
 }

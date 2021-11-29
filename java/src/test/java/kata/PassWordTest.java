@@ -84,16 +84,23 @@ import org.junit.jupiter.api.Test;
 	}
     
     @Test
-    void pass_word_notValid(){
+    void pass_word_Valid_Refactoring(){
+		Password password = new Password("123$Pass");
+
+		Assertions.assertTrue(password.isValidPassword());
+	}
+    
+    @Test
+    void pass_word_notValid_isEmpty(){
 		Password password = new Password("");
 
 		Assertions.assertFalse(password.isValidPassword());
 	}
     
     @Test
-    void pass_word_Valid_(){
-		Password password = new Password("123$Pass");
+    void pass_word_notValid(){
+		Password password = new Password("12pa");
 
-		Assertions.assertTrue(password.isValidPassword());
+		Assertions.assertFalse(password.isValidPassword());
 	}
 }
