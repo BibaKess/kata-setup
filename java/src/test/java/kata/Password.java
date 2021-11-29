@@ -1,7 +1,5 @@
 package kata;
 
-import java.util.function.BooleanSupplier;
-
 public class Password {
 	
 	
