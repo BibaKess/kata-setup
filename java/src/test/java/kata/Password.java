@@ -1,5 +1,7 @@
 package kata;
 
+import java.util.function.BooleanSupplier;
+
 public class Password {
 	
 	
@@ -21,6 +23,11 @@ public class Password {
 
 	public boolean hasAtLeastOneNumber() {
 		return this.passWordValue.matches(".*\\d+.*");
+	}
+
+	public boolean hasAtLeastOneCaracter() {
+		// TODO Auto-generated method stub
+		return true;
 	} 
 	
 	
