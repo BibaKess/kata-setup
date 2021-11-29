@@ -120,7 +120,7 @@ import org.junit.jupiter.api.Test;
 
          Assertions.assertFalse(new Password("hello1").isValidPassword());
          Assertions.assertFalse(new Password("HELLPPP").isValidPassword());         
-         Assertions.assertFalse(new Password("HELLPPP").isValidPassword());
+         Assertions.assertFalse(new Password("123456789").isValidPassword());
 
 
 
