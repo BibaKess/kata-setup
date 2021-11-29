@@ -117,6 +117,7 @@ import org.junit.jupiter.api.Test;
          Assertions.assertTrue(new Password("123456éà").isValidPassword());
          Assertions.assertTrue(new Password("TéDéDé1").isValidPassword());
 <<<<<<< HEAD
+<<<<<<< HEAD
          Assertions.assertTrue(new Password("HELLO00").isValidPassword());
 
          Assertions.assertFalse(new Password("hello1").isValidPassword());
@@ -125,5 +126,8 @@ import org.junit.jupiter.api.Test;
 =======
          Assertions.assertTrue(new Password("123456éà").isValidPassword());
 >>>>>>> f9e8b7b7302ac5031c6dc6759466d91814e7aa0f
+=======
+         Assertions.assertFalse(new Password("123456éà").isValidPassword());
+>>>>>>> dc733de89e514b3314addd6990d3da4442d99cbd
      }
  }
