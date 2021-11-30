@@ -1,0 +1,10 @@
+.idea
+*.iml
+out
+target
+java/.classpath
+java/.project
+java/.settings/
+.DS_Store
+swift4.2/kata/kata.xcodeproj/
+/.metadata/
