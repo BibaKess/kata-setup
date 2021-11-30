@@ -19,7 +19,7 @@ public class Password {
 	}
 
 	public boolean hasAtLeastOneCaracter() {
-		return passWordValue.matches(".*[a-zA-Z]+.*");
+		return passWordValue.matches(".*[a-zéèàêÅåA-Z]+.*");
 	}
 
 	public boolean hasMoreThanSixCaractere() {
