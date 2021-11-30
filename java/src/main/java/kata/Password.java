@@ -39,7 +39,7 @@ public class Password {
 	}
 
 	public boolean hasAtLeastOneSpecialCars() {
-		return  passWordValue.matches(".*[éèàêÅå$&+,:;=?@#|'<>.-^*()%!]+.*");
+		return  passWordValue.matches(".*[.*[éèàêå$&,+,:;=?@#|'<>-]+.*]+.*");
 	}
 
 }
