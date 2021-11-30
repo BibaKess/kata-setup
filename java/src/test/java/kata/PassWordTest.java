@@ -87,11 +87,13 @@ import org.junit.jupiter.api.Test;
         Assertions.assertTrue("rrrr1Z666".matches(".*[a-zA-Z]+.*"));
 //        Assertions.assertTrue("a".matches("/^([a-zA-Z]+)$/"));
 //        Assertions.assertTrue("az".matches("/^([a-zA-Z]+)$/"));
+
+        Assertions.assertTrue("B".matches(".*[éà]+.*"));
     }
     
     @Test
     void pass_word_Valid(){
-		Password password = new Password("123$pass");
+		Password password = new Password("bonjour1");
 
 		Assertions.assertNotNull(password.getPassWordValue());
 		Assertions.assertTrue(password.hasAtLeastOneNumber());
