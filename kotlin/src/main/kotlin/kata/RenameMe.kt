@@ -1,5 +1,0 @@
-package kata
-
-class RenameMe {
-
-}
