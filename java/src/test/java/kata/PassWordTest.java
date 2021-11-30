@@ -110,9 +110,18 @@ import org.junit.jupiter.api.Test;
 
 		Assertions.assertFalse(password.isValidPassword());
 	}
-
-     @Test
-     void testDuPO() throws Exception {
-         
-     }
- }
+    
+    @Test
+    void test_po() {
+    	Assertions.assertTrue(new Password("bonjour1").isValidPassword());
+    	Assertions.assertTrue(new Password("HELLO00").isValidPassword());
+    	Assertions.assertTrue(new Password("TéDéDé1").isValidPassword());
+    	Assertions.assertFalse(new Password("hello1").isValidPassword());
+    	Assertions.assertFalse(new Password("HELLPPP").isValidPassword());
+    	Assertions.assertFalse(new Password("123456789").isValidPassword());
+    	Assertions.assertTrue(new Password("TéDéDé1").isValidPassword());
+    	Assertions.assertTrue(new Password("123456éà").isValidPassword());
+    	
+    
+    }
+}
