@@ -35,7 +35,7 @@ public class Password {
 		return hasMoreThanSixCaractere() && hasAtLeastOneNumber() && hasAtLeastOneCaracter();
 	}
 	public boolean isValidPasswordForAdmin() {
-		return hasMoreThanSixCaractere() && hasAtLeastOneNumber() && hasAtLeastOneCaracter();
+		return hasMoreThanTenCaractere() && hasAtLeastOneNumber() && hasAtLeastOneCaracter() && hasAtLeastOneSpecialCars();
 	}
 
 	public boolean hasAtLeastOneSpecialCars() {
