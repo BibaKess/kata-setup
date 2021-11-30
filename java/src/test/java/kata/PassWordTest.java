@@ -55,6 +55,22 @@ import org.junit.jupiter.api.Test;
 		Assertions.assertNotNull(password.getPassWordValue());
 		Assertions.assertTrue(password.hasMoreThanSixCaractere());
 	}
+	
+	@Test
+	 void pass_word_hasMoreThanThenCaractere_notValid() {
+		Password password = new Password("pass12345");
+		
+		Assertions.assertNotNull(password.getPassWordValue());
+		Assertions.assertFalse(password.hasMoreThanTenCaractere());
+	}
+	
+	@Test
+	 void pass_word_hasMoreThanTenCaractere_valid() {
+		Password password = new Password("pass12345678");
+		
+		Assertions.assertNotNull(password.getPassWordValue());
+		Assertions.assertTrue(password.hasMoreThanTenCaractere());
+	}
 
     @Test
     void name() throws Exception {
@@ -87,39 +103,56 @@ import org.junit.jupiter.api.Test;
     void pass_word_Valid_Refactoring(){
 		Password password = new Password("123$Pass");
 
-		Assertions.assertTrue(password.isValidPassword());
+		Assertions.assertTrue(password.isValidPasswordForUser());
 	}
     
     @Test
     void pass_word_notValid_lessThanSixCractere(){
 		Password password = new Password("12pa");
 
-		Assertions.assertFalse(password.isValidPassword());
+		Assertions.assertFalse(password.isValidPasswordForUser());
 	}
     
     @Test
     void pass_word_notValid_withoutCaractere(){
 		Password password = new Password("1234567");
 
-		Assertions.assertFalse(password.isValidPassword());
+		Assertions.assertFalse(password.isValidPasswordForUser());
 	}
     
     @Test
     void pass_word_notValid_withoutNumber(){
 		Password password = new Password("Abcde£f");
 
-		Assertions.assertFalse(password.isValidPassword());
+		Assertions.assertFalse(password.isValidPasswordForUser());
 	}
-
+    @Test
+    void pass_word_valid_withSpecialCars(){
+    	Password password = new Password("Abcdeéà(°£f");
+    	
+    	Assertions.assertTrue(password.hasAtLeastOneSpecialCars());
+    }
+    @Test
+    void pass_word_not_valid_withoutSpecialCars(){
+    	Password password = new Password("Abcdedfghgff");
+    	
+    	Assertions.assertFalse(password.hasAtLeastOneSpecialCars());
+    }
+    @Test
+    void test() {
+    	//Assertions.assertFalse("bcdedfghgff".matches(".*[éèàêå$&+,:;=?@#|'<>.-^*()%!]+.*"));
+    	Assertions.assertFalse("B".matches(".*[éèàêå]+.*"));
+    }
      @Test
      void testDuPO() throws Exception {
-         Assertions.assertTrue(new Password("bonjour1").isValidPassword());
-         Assertions.assertTrue(new Password("123456éà").isValidPassword());
-         Assertions.assertTrue(new Password("TéDéDé1").isValidPassword());
-         Assertions.assertTrue(new Password("HELLO00").isValidPassword());
+         Assertions.assertTrue(new Password("bonjour1").isValidPasswordForUser());
+         Assertions.assertTrue(new Password("123456éà").isValidPasswordForUser());
+         Assertions.assertTrue(new Password("123456ééè()à").isValidPasswordForUser());
+         Assertions.assertTrue(new Password("TéDéDé1").isValidPasswordForUser());
+         Assertions.assertTrue(new Password("HELLO00").isValidPasswordForUser());
 
-         Assertions.assertFalse(new Password("hello1").isValidPassword());
-         Assertions.assertFalse(new Password("HELLPPP").isValidPassword());         
-         Assertions.assertFalse(new Password("123456789").isValidPassword());
+         Assertions.assertFalse(new Password("hello1").isValidPasswordForUser());
+         Assertions.assertFalse(new Password("HELLPPP").isValidPasswordForUser());         
+         Assertions.assertFalse(new Password("123456789").isValidPasswordForUser());
      }
  }

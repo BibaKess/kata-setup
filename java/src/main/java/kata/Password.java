@@ -1,5 +1,7 @@
 package kata;
 
+import java.util.function.BooleanSupplier;
+
 public class Password {
 	
 	private String passWordValue ;
@@ -22,12 +24,22 @@ public class Password {
 		return passWordValue.matches(".*[a-zéèàêÅåA-Z]+.*");
 	}
 
+	public boolean hasMoreThanTenCaractere() {
+		return passWordValue.length()> 10;
+	} 
 	public boolean hasMoreThanSixCaractere() {
-		return passWordValue.length()>6;
+		return passWordValue.length()> 6;
 	} 
 	
-	public boolean isValidPassword() {
+	public boolean isValidPasswordForUser() {
 		return hasMoreThanSixCaractere() && hasAtLeastOneNumber() && hasAtLeastOneCaracter();
+	}
+	public boolean isValidPasswordForAdmin() {
+		return hasMoreThanSixCaractere() && hasAtLeastOneNumber() && hasAtLeastOneCaracter();
+	}
+
+	public boolean hasAtLeastOneSpecialCars() {
+		return  passWordValue.matches(".*[éèàêÅå$&+,:;=?@#|'<>.-^*()%!]+.*");
 	}
 
 }
