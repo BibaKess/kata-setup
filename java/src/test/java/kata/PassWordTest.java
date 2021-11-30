@@ -87,11 +87,8 @@ import org.junit.jupiter.api.Test;
         Assertions.assertTrue("rrrr1Z666".matches(".*[a-zA-Z]+.*"));
 //        Assertions.assertTrue("a".matches("/^([a-zA-Z]+)$/"));
 //        Assertions.assertTrue("az".matches("/^([a-zA-Z]+)$/"));
-<<<<<<< HEAD
-=======
 
         Assertions.assertTrue("B".matches(".*[éàÅå]+.*"));
->>>>>>> 611a972dce385d75a69ab89346d40057756338b4
     }
     
     @Test
